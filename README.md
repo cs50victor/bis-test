@@ -14,9 +14,9 @@ For this section, I tried making an API endpoint for each question.
 
 1. Golang Fibonacci
 
-- file location: api/fib.go
-- endpoint: `https://bis-test.vercel.app/api/fib/?num=`
-- example: `curl https://bis-test.vercel.app/api/fib/?num=10`
+   - file location: api/fib.go
+   - endpoint: `https://bis-test.vercel.app/api/fib/?num=`
+   - example: `curl https://bis-test.vercel.app/api/fib/?num=10`
 
     ```go
     func fibonacci(n int) []int {
@@ -36,7 +36,7 @@ For this section, I tried making an API endpoint for each question.
 
 2. Word Count
 
-- file location: fileWordCount.py
+   - file location: fileWordCount.py
 
     ```py
     from collections import defaultdict, OrderedDict
@@ -73,9 +73,9 @@ For this section, I tried making an API endpoint for each question.
 
 3. Balanced Parenthesis
 
-- file location: api/isBalanced.py
-- endpoint: `https://bis-test.vercel.app/api/isBalanced/?string=`
-- example: `curl https://bis-test.vercel.app/api/isBalanced/?string=(())`
+   - file location: api/isBalanced.py
+   - endpoint: `https://bis-test.vercel.app/api/isBalanced/?string=`
+   - example: `curl https://bis-test.vercel.app/api/isBalanced/?string=(())`
 
     ```py
     def isParenthesisBalanced(self, string):
