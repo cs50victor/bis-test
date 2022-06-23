@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse,parse_qs
-import json
+from json import dumps
 
 """
 3. Balance Parenthesis  api/isBalanced/?string=
@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         else:
             response["data"] = None
             response["error"] = "No string provided. Please provide a string by adding a query to the url. i.e api/isBalanced/?string=(())"
-        self.wfile.write(bytes(json.dumps(response, ensure_ascii=False), 'utf-8'))
+        self.wfile.write(bytes(dumps(response, ensure_ascii=False), 'utf-8'))
         return
 
     def isParenthesisBalanced(self, string):
